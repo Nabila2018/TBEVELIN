@@ -1,0 +1,16 @@
+package com.example.evelin.data.response
+
+import com.google.gson.annotations.SerializedName
+
+data class UserResponse(
+
+	@field:SerializedName("data")
+	val data: LoginUser,
+
+	@field:SerializedName("error")
+	val error: Boolean? = null,
+
+	@field:SerializedName("message")
+	val message: String? = null
+)
+
